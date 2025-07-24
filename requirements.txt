@@ -1,0 +1,4 @@
+ultralytics==8.2.12
+opencv-python==4.9.0.80
+matplotlib==3.9.1
+numpy
