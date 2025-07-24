@@ -1,3 +1,4 @@
 traffic_ai_env/
 __pycache__/
 *.pyc
+*.mp4
