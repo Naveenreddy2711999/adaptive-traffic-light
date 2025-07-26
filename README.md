@@ -13,6 +13,7 @@ An intelligent traffic management system that dynamically adjusts traffic light 
 ## ✨ Features
 
 Problem Statement
+
 ❌ Long waiting times during low traffic
 
 ❌ Traffic jams during peak hours
@@ -70,26 +71,27 @@ Provides a real-time dashboard for monitoring
 ## 📂 Project Structure
 
 adaptive-traffic-light/
+
 │
-├── adaptive_traffic_sim.py       # Main simulation code (YOLO + SUMO)
-├── vehicle_detection.py          # YOLOv8-based vehicle & emergency detection
-├── traffic_light.sumocfg         # SUMO traffic simulation configuration
-├── yolov8n.pt                    # Pre-trained YOLOv8 model
-├── app.py                        # Flask server (dashboard + API)
-├── requirements.txt              # Python dependencies
-├── LICENSE                       # MIT License
-├── README.md                     # Project documentation
+├── adaptive_traffic_sim.py      
+├── vehicle_detection.py         
+├── traffic_light.sumocfg         
+├── yolov8n.pt                   
+├── app.py                       
+├── requirements.txt              
+├── LICENSE                       
+├── README.md                   
 │
-├── static/                       # Static assets (CSS, images, JS)
-│   └── style.css                 # Dashboard styling
+├── static/                      
+│   └── style.css                
 │
-├── templates/                    # Flask HTML templates
-│   └── dashboard.html            # Real-time dashboard UI
+├── templates/                    
+│   └── dashboard.html            
 │
-├── data/                         # Place sample/CCTV traffic videos here
+├── data/                        
 │
-└── adaptive_graph.png            # Traffic flow improvement graph
-```
+└── adaptive_graph.png          
+
 ⚙️ Installation
 
 1️⃣ Clone the Repository
@@ -97,18 +99,22 @@ adaptive-traffic-light/
 git clone https://github.com/Naveenreddy2711999/adaptive-traffic-light.git
 cd adaptive-traffic-light
 
+
 2️⃣ Create & Activate Virtual Environment
 
 python3 -m venv traffic_ai_env
 source traffic_ai_env/bin/activate    # MacOS/Linux
 
+
 3️⃣ Install Dependencies
 
 pip install -r requirements.txt
 
+
 4️⃣ Install SUMO
 
 brew install sumo
+
 
 🚀 Running the Project
 
@@ -117,11 +123,14 @@ brew install sumo
     python adaptive_traffic_sim.py
 
 2. Start Flask Dashboard
+   
     python app.py
 
-3. Access Dashboard
+4. Access Dashboard
+   
     Open in your browser:
         http://127.0.0.1:5000
+
 
 You will see:
 
@@ -131,7 +140,9 @@ Real-time traffic count & signal status
 
 Emergency vehicle alerts
 
+
 📊 How It Works (Step by Step)
+
 YOLOv8 detects vehicles & emergency vehicles from video or live webcam.
 
 Vehicle counts are analyzed to determine green light duration dynamically.
@@ -144,13 +155,17 @@ Graphs are generated for traffic trends (generate_graphs.py).
 
 Flask dashboard displays live signal timing & vehicle statistics.
 
+
 📈 Results
+
 The system dynamically changes traffic light timing based on real-time vehicle count.
 Below is an example graph of traffic optimization:
 
 (adaptive_graph.png)
 
+
 🔮Future Scope
+
 ✅ Integration with IoT-based traffic signals
 
 ✅ Use of Reinforcement Learning for improved predictions
@@ -160,7 +175,9 @@ Below is an example graph of traffic optimization:
 ✅ Integration with Google Maps API for route suggestions
 
 📜 License
+
 This project is licensed under the MIT License.
+
 See the LICENSE file for details.
 
 
