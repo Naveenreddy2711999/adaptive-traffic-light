@@ -22,6 +22,9 @@ Problem Statement
 
 ❌ No centralized monitoring
 
+---
+
+
 ✅ Solution
 
 This AI-powered system:
@@ -33,6 +36,9 @@ Optimizes traffic light timings to reduce congestion
 Gives priority clearance to emergency vehicles
 
 Provides a real-time dashboard for monitoring
+
+
+---
 
 🔥 Features
 
@@ -49,8 +55,6 @@ Provides a real-time dashboard for monitoring
 ✔ Graph visualization of traffic flow improvements
 
 ✔ Scalable for smart city deployment
-
-
 
 ---
 🛠 Tech Stack
@@ -90,7 +94,10 @@ adaptive-traffic-light/
 │
 ├── data/                        
 │
-└── adaptive_graph.png          
+└── adaptive_graph.png         
+
+---
+
 
 ⚙️ Installation
 
@@ -114,6 +121,9 @@ pip install -r requirements.txt
 4️⃣ Install SUMO
 
 brew install sumo
+
+---
+
 
 
 🚀 Running the Project
@@ -140,6 +150,9 @@ Real-time traffic count & signal status
 
 Emergency vehicle alerts
 
+---
+
+
 
 📊 How It Works (Step by Step)
 
@@ -155,6 +168,8 @@ Graphs are generated for traffic trends (generate_graphs.py).
 
 Flask dashboard displays live signal timing & vehicle statistics.
 
+---
+
 
 📈 Results
 
@@ -162,6 +177,8 @@ The system dynamically changes traffic light timing based on real-time vehicle c
 Below is an example graph of traffic optimization:
 
 (adaptive_graph.png)
+
+---
 
 
 🔮Future Scope
@@ -173,6 +190,9 @@ Below is an example graph of traffic optimization:
 ✅ Cloud dashboard for city-wide traffic monitoring
 
 ✅ Integration with Google Maps API for route suggestions
+
+---
+
 
 📜 License
 
